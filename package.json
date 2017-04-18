@@ -16,6 +16,7 @@
   "author": "Eric Nielsen",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.1",
     "express": "^4.15.0",
     "path": "^0.12.7",
     "react": "^15.4.2",
