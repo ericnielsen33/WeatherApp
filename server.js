@@ -1,6 +1,6 @@
 var express = require('express');
 
-// Creat app
+// Create app
 
 var app = express();
 app.use(express.static('public'));
