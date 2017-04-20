@@ -7,12 +7,17 @@ import {
   Switch
 } from 'react-router-dom';
 
+// import components to render
+
 import About from 'About';
 import Examples from 'Examples';
 import Main from 'Main';
 import Nav from 'Nav';
 import Weather from 'Weather';
 
+// load foundation
+require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
+$(document).foundation();
 
 ReactDOM.render(
         <Router>
