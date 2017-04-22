@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch
 } from 'react-router-dom';
 
@@ -11,25 +10,31 @@ import {
 
 import About from 'About';
 import Examples from 'Examples';
-import Main from 'Main';
-import Nav from 'Nav';
+import Home from 'Home';
+import Layout from 'Layout';
 import Weather from 'Weather';
 
 // load foundation
 require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
-ReactDOM.render(
+class App extends Component {
+  render() {
+    return(
         <Router>
-          <div>
-            <Nav />
+          <Layout>
             <Switch>
-              <Route exact path="/" component={Main} />
+              <Route exact path="/" component={Home} />
               <Route path="/Weather" component={Weather} />
               <Route path="/About" component={About} />
               <Route path="/Examples" component={Examples} />
             </Switch>
-          </div>
-        </Router>,
+          </Layout>
+        </Router>
+      );
+  }
+}
+
+ReactDOM.render(<App/>,
         document.getElementById('app')
         );
