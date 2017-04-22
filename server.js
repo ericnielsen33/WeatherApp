@@ -15,7 +15,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-
 // Listen on port , which depends on the environment
 
 app.listen(PORT, function (){

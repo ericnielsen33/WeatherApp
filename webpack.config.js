@@ -26,7 +26,8 @@ module.exports = {
         alias: {
             About: path.resolve(__dirname, 'app/components/About.jsx'),
             Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
-            Main: path.resolve(__dirname, 'app/components/Main.jsx'),
+            Home: path.resolve(__dirname, 'app/components/Home.jsx'),
+            Layout: path.resolve(__dirname, 'app/components/Layout.jsx'),
             Nav: path.resolve(__dirname, 'app/components/Nav.jsx'),
             openWeatherMap: path.resolve(__dirname, 'app/api/openWeatherMap.jsx'),
             Weather: path.resolve(__dirname, 'app/components/Weather.jsx'),
