@@ -25,6 +25,7 @@ module.exports = {
         extensions: [' ', '.js', '.jsx'],
         alias: {
             About: path.resolve(__dirname, 'app/components/About.jsx'),
+            ErrorModal: path.resolve(__dirname, 'app/components/ErrorModal.jsx'),
             Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
             Home: path.resolve(__dirname, 'app/components/Home.jsx'),
             Layout: path.resolve(__dirname, 'app/components/Layout.jsx'),
