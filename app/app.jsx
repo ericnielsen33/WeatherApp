@@ -18,8 +18,8 @@ import Weather from 'Weather';
 require('style-loader!css-loader!foundation-sites/dist/css/foundation.min.css');
 $(document).foundation();
 
-// load App.css
-require('style-loader!css-loader!appCSS');
+// load app.scss
+require('style-loader!css-loader!sass-loader!appSCSS');
 $(document).foundation();
 
 class App extends Component {

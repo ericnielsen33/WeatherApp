@@ -22,9 +22,9 @@ module.exports = {
     },
     resolve: {
         modules: ['node_modules', 'app'],
-        extensions: [' ', '.js', '.jsx', 'css'],
+        extensions: [' ', '.js', '.jsx', 'css', 'scss'],
         alias: {
-            appCSS: path.resolve(__dirname, 'app/styles/app.css'),
+            appSCSS: path.resolve(__dirname, 'app/styles/app.scss'),
             About: path.resolve(__dirname, 'app/components/About.jsx'),
             ErrorModal: path.resolve(__dirname, 'app/components/ErrorModal.jsx'),
             Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
@@ -46,7 +46,15 @@ module.exports = {
             },
             test: /\.jsx?$/,
             exclude: /(node_modules | bower_components)/
-        }
+        },
+        // {
+        //         test: /\.css$/,
+        //         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        //     },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract("style-loader", "sass-loader")
+            }
         ]
     },
     devtool: 'cheap-module-eval-source-map'
