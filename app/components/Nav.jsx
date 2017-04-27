@@ -32,7 +32,7 @@ class Nav extends Component {
                     <form onSubmit={this.onSearch}>
                         <ul className="menu">
                             <li>
-                                <input type="search" placeholder="Search by city" />
+                                <input type="search" placeholder="Enter city" />
                             </li>
                             <li>
                                 <input type="submit" className="button" value="Get Weather" />

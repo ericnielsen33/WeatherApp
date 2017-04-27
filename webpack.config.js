@@ -22,8 +22,9 @@ module.exports = {
     },
     resolve: {
         modules: ['node_modules', 'app'],
-        extensions: [' ', '.js', '.jsx'],
+        extensions: [' ', '.js', '.jsx', 'css'],
         alias: {
+            appCSS: path.resolve(__dirname, 'app/styles/app.css'),
             About: path.resolve(__dirname, 'app/components/About.jsx'),
             ErrorModal: path.resolve(__dirname, 'app/components/ErrorModal.jsx'),
             Examples: path.resolve(__dirname, 'app/components/Examples.jsx'),
